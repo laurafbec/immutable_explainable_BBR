@@ -1,0 +1,6 @@
+bag_interpreter_node:
+  ros__parameters:
+    rosbag_dir: '/home/laura/ros2_ws/rosbag_output'
+    rosbag_file_path: 'bag_20231015-1215710953/bag_20231015-1215710953_0.mcap'
+    log_output_dir: '/home/laura/ros2_ws/log_output'
+    log_output_file_path: 'log_output.txt'
