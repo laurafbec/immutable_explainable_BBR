@@ -1,0 +1,18 @@
+tp_bag_recorder_srv:
+  ros__parameters:
+    initialpose: 1
+    scan: 50
+    map: 1
+    odom: 100
+    cmd_vel: 15
+    amcl_pose: 10
+    tf: 1000
+    tf_static: 1
+    robot_description: 1
+    rosout: 5
+    global_costmap_costmap: 1
+    local_costmap_costmap: 10
+    plan: 5
+    navigate_to_pose_action: 1
+    camera_image_raw: 15
+    behavior_tree_log: 10
