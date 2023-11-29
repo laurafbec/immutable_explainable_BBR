@@ -1,0 +1,6 @@
+bag_interpreter_node:
+  ros__parameters:
+    rosbag_dir: '/home/laura/ros2_ws/rosbag_output'
+    rosbag_file_path: 'bag_20230206-2019840857/bag_20230206-2019840857_0.db3'
+    log_output_dir: '/home/laura/ros2_ws/log_output'
+    log_output_file_path: 'raw_data.txt'
