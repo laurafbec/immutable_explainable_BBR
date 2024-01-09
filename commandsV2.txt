@@ -1,0 +1,61 @@
+source /usr/share/gazebo/setup.bash
+source install/setup.bash
+ros2 launch rb1_sandbox hospital_door.launch.py
+ros2 launch rb1_sandbox hospital_door_fullmap.launch.py 
+
+
+---------------------------------------------------------------
+ros2 launch tamper_proof_bag_recorder tp_bag_recorder.launch.py
+ros2 service call /tp_bag_recorder_srv std_srvs/srv/SetBool data:\ true
+ros2 service call /tp_bag_recorder_srv std_srvs/srv/SetBool data:\ false
+Output: ros2 launch tamper_proof_bag_recorder tp_bag_recorder.launch.py 
+[INFO] [launch]: All log files can be found below /home/laura/.ros/log/2023-11-22-17-42-04-793882-laura-ThinkPad-15533
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [tp_bag_recorder_srv-1]: process started with pid [15535]
+[tp_bag_recorder_srv-1] [INFO] [1700671326.257738212] [tp_bag_recorder_srv]: Initial nonce 92fcd02be0566fb23f8aff37ec7fd4900fcd96b7973623ab80cf2f23742e9e4e
+[tp_bag_recorder_srv-1] [INFO] [1700671365.555115050] [tp_bag_recorder_srv]: Sending transaction...
+[tp_bag_recorder_srv-1] [INFO] [1700671398.615260224] [tp_bag_recorder_srv]: Sending transaction...
+[tp_bag_recorder_srv-1] [INFO] [1700671432.303668070] [tp_bag_recorder_srv]: Sending transaction...
+
+
+
+----------------------------------------------------------------------------------
+ros2 run tamper_proof_bag_recorder contract_deployment
+#update contract address in config->blockchain_config.yaml file after every deployment
+Output: Contract Address: 0x7223a08911947C7351B75EA41266Cb695c72124e
+---------------------------------------------------------------------------------
+
+ros2 run bag_recorder_tamper_proof bag_reader_proof 
+
+-------------------------------------------------------------------------------------------------------------
+ros2 launch tamper_proof_bag_recorder proof_checker.launch.py
+
+ros2 service call /proof_checker custom_interfaces/srv/ProofCheckerServiceMessage "proof: '498aaa4f90cbbffeda1a349ebfa8ebb975be2776d1adb111056e36898701b92c'"
+waiting for service to become available...
+requester: making request: custom_interfaces.srv.ProofCheckerServiceMessage_Request(proof='498aaa4f90cbbffeda1a349ebfa8ebb975be2776d1adb111056e36898701b92c')
+
+response:
+custom_interfaces.srv.ProofCheckerServiceMessage_Response(answer='The hash value is not stored on the Blockchain network')
+
+laura@laura-ThinkPad:~/ros2_ws$ ros2 service call /proof_checker custom_interfaces/srv/ProofCheckerServiceMessage "proof: 'f258a4be5ea044d407c6a7f7a3a42d194e95b61f90a5f39eda82c9306834da83'"
+waiting for service to become available...
+requester: making request: custom_interfaces.srv.ProofCheckerServiceMessage_Request(proof='f258a4be5ea044d407c6a7f7a3a42d194e95b61f90a5f39eda82c9306834da83')
+
+response:
+custom_interfaces.srv.ProofCheckerServiceMessage_Response(answer='The hash value is stored in the block number 3947 on the Blockchain network')
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ros2 launch waypoint_navigation waypoint_navigation_hospital.launch.py
+ros2 run waypoint_navigation waypoint_navigation_hospital_node 
+
+ros2 launch bag_recorder bag_recorder.launch.py 
+ros2 service call /bag_recorder std_srvs/srv/SetBool data:\ false
+
+ ros2 run goal_sender nav_to_pose_action_client
+ 
+ 
+ cd /media/laura/Datos/Doctorado/anti-tampering/statistics/results1
+ /home/laura/bin/dool --time --cpu  --mem --load -dn -g --fs --top-cpu --top-mem --top-latency --top-latency-avg --output dool.csv
+ 
+ 
+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
