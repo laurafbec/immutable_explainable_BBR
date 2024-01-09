@@ -305,6 +305,7 @@ class TamperProofBagRecorder(Node):
                 if self.topic_messages_counters[topic_name] % bc_rate == 0:
                   message_str = str(msg)
                   hash_value = self.blockchain.get_hash_value(message_str, self.previous_hash)
+                  self.get_logger().info("Hash value: %s" % (hash_value))
 
                   # Hashes' list gas estimation
                   #hash_estimated_gas = self.blockchain.get_hashes_list_gas_price(self.hash_value_list)

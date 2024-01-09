@@ -27,7 +27,7 @@ setup(
             'tp_bag_recorder_srv = tamper_proof_bag_recorder.tp_bag_recorder_srv:main',
             'proof_checker_srv = tamper_proof_bag_recorder.proof_checker_srv:main',
             'contract_deployment = tamper_proof_bag_recorder.contract_deployment:main',
-            'bag_reader_proof = tamper_proof_bag_recorder.bag_reader_proof:main'
+            'bag_reader_chained_proofs = tamper_proof_bag_recorder.bag_reader_chained_proofs:main'
         ],
     },
 )
