@@ -10,9 +10,28 @@ tp_bag_recorder_srv:
     tf_static: 1
     robot_description: 1
     rosout: 5
-    global_costmap_costmap: 1
-    local_costmap_costmap: 10
+    global_costmap/costmap: 1
+    local_costmap/costmap: 10
     plan: 5
-    navigate_to_pose_action: 1
-    camera_image_raw: 15
+    navigate_to_pose/_action/status: 1
+    camera/image_raw: 15
+    behavior_tree_log: 10
+
+bag_reader_chained_proofs:
+  ros__parameters:
+    initialpose: 1
+    scan: 50
+    map: 1
+    odom: 100
+    cmd_vel: 15
+    amcl_pose: 10
+    tf: 1000
+    tf_static: 1
+    robot_description: 1
+    rosout: 5
+    global_costmap/costmap: 1
+    local_costmap/costmap: 10
+    plan: 5
+    navigate_to_pose/_action/status: 1
+    camera/image_raw: 15
     behavior_tree_log: 10

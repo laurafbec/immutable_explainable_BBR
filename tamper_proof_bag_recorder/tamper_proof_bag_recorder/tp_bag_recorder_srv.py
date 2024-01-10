@@ -130,11 +130,11 @@ class TamperProofBagRecorder(Node):
             ('tf_static', rclpy.Parameter.Type.INTEGER),
             ('robot_description', rclpy.Parameter.Type.INTEGER),
             ('rosout', rclpy.Parameter.Type.INTEGER),
-            ('global_costmap_costmap', rclpy.Parameter.Type.INTEGER),
-            ('local_costmap_costmap', rclpy.Parameter.Type.INTEGER),
+            ('global_costmap/costmap', rclpy.Parameter.Type.INTEGER),
+            ('local_costmap/costmap', rclpy.Parameter.Type.INTEGER),
             ('plan', rclpy.Parameter.Type.INTEGER),
-            ('navigate_to_pose_action', rclpy.Parameter.Type.INTEGER),
-            ('camera_image_raw', rclpy.Parameter.Type.INTEGER),
+            ('navigate_to_pose/_action/status', rclpy.Parameter.Type.INTEGER),
+            ('camera/image_raw', rclpy.Parameter.Type.INTEGER),
             ('behavior_tree_log', rclpy.Parameter.Type.INTEGER),
         ]
     
@@ -167,11 +167,11 @@ class TamperProofBagRecorder(Node):
             'tf_static': (TFMessage, 'tf2_msgs/msg/TFMessage', self.tf_static_qos, parameter_values.get('tf_static', 1)),
             'robot_description': (String, 'std_msgs/msg/String', self.robot_description_qos, parameter_values.get('robot_description', 1)),
             'rosout': (Log, 'rcl_interfaces/msg/Log', self.rosout_qos, parameter_values.get('rosout', 5)),
-            'global_costmap/costmap': (OccupancyGrid, 'nav_msgs/msg/OccupancyGrid', self.global_costmap_costmap_qos, parameter_values.get('global_costmap_costmap', 1)),
-            'local_costmap/costmap': (OccupancyGrid, 'nav_msgs/msg/OccupancyGrid', self.local_costmap_costmap_qos, parameter_values.get('local_costmap_costmap', 10)),
+            'global_costmap/costmap': (OccupancyGrid, 'nav_msgs/msg/OccupancyGrid', self.global_costmap_costmap_qos, parameter_values.get('global_costmap/costmap', 1)),
+            'local_costmap/costmap': (OccupancyGrid, 'nav_msgs/msg/OccupancyGrid', self.local_costmap_costmap_qos, parameter_values.get('local_costmap/costmap', 10)),
             'plan': (Path, 'nav_msgs/msg/Path', None, parameter_values.get('plan', 5)),
-            'navigate_to_pose/_action/status': (GoalStatusArray, 'action_msgs/msg/GoalStatusArray', self.navigate_to_pose_action, parameter_values.get('navigate_to_pose_action', 1)),
-            'camera/image_raw': (Image, 'sensor_msgs/msg/Image', self.camera_image_raw_qos, parameter_values.get('camera_image_raw', 15)),
+            'navigate_to_pose/_action/status': (GoalStatusArray, 'action_msgs/msg/GoalStatusArray', self.navigate_to_pose_action, parameter_values.get('navigate_to_pose/_action/status', 1)),
+            'camera/image_raw': (Image, 'sensor_msgs/msg/Image', self.camera_image_raw_qos, parameter_values.get('camera/image_raw', 15)),
             'behavior_tree_log': (BehaviorTreeLog, 'nav2_msgs/msg/BehaviorTreeLog', None, parameter_values.get('behavior_tree_log', 15))
         }
 

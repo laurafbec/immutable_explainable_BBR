@@ -1,4 +1,5 @@
 bag_reader_chained_proofs:
   ros__parameters:
-    rosbag_uri: "/home/laura/ros2_ws/rosbag_output/bag_20240109-1958675830/bag_20240109-1958675830_0.mcap"
-    initial_nonce: "71b31d8ca5ea07527f39dcb391e0852cdf0fc77f8475d92672fc9888924a40bc"
+    rosbag_uri: "/home/laura/ros2_ws/rosbag_output/bag_20240110-1354811973/bag_20240110-1354811973_0.mcap"
+    initial_nonce: "792e49d628710dfc007d8111ab7be7682d593fbe9fa69bbbcd66ed671c43dd95"
+    initialpose: 1

@@ -9,13 +9,13 @@ def generate_launch_description():
     config = os.path.join(
         get_package_share_directory('tamper_proof_bag_recorder'),
         'config',
-        'rosbag_info.yaml'
+        'bc_rates.yaml'
         )
 
     return LaunchDescription([
         Node(
             package='tamper_proof_bag_recorder',
-            executable='bag_reader_chained_proofs',
+            executable='tp_bag_recorder_srv',
             output='screen',
             parameters = [config],
             arguments=['--ros-args', '--log-level', 'info']
