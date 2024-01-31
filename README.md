@@ -18,7 +18,7 @@ Nodejs, Ganache, Solidity etc.
 
 [LocalGPT](https://github.com/PromtEngineer/localGPT)
 
-# Software artifacts
+# Usage
 ## Accountability approach
 ### Recording service
 After starting the simulation, immutable black-box recording information service can be started with the command
@@ -80,4 +80,4 @@ requester: making request: custom_interfaces.srv.ProofCheckerServiceMessage_Requ
 response:
 custom_interfaces.srv.ProofCheckerServiceMessage_Response(answer='The hash value is stored in the block number 3946 on the Blockchain network')
 ```
-
+## Explainability approach
