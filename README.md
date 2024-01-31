@@ -42,6 +42,9 @@ The deployment of the Solidity contract containing the blockchain logic can be d
 ros2 run tamper_proof_bag_recorder contract_deployment
 ```
 After every deployment, the contract address muy be updated [here](https://github.com/laurafbec/immutable_explainable_BBR/blob/main/tamper_proof_bag_recorder/config/blockchain_config.yaml).
+
 Output example
+```
 Contract Address: 0x7223a08911947C7351B75EA41266Cb695c72124e
+```
 
