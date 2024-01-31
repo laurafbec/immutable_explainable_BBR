@@ -68,3 +68,16 @@ Output example
 [bag_reader_chained_proofs-1] [INFO] [1704890660.901192472] [bag_reader_chained_proofs]: Stored hash: c3066d23ed8ea92b7f40d6526f48b772aaa1e17e45b14bbf3fa61cee3c2d1970
 ....
 ```
+### Hash verification
+The storagement of a hash value in blockchain ca be checked by running
+```
+ros2 launch tamper_proof_bag_recorder proof_checker.launch.py
+```
+```
+ros2 service call /proof_checker custom_interfaces/srv/ProofCheckerServiceMessage "proof: 'c3066d23ed8ea92b7f40d6526f48b772aaa1e17e45b14bbf3fa61cee3c2d1970'"
+requester: making request: custom_interfaces.srv.ProofCheckerServiceMessage_Request(proof='c3066d23ed8ea92b7f40d6526f48b772aaa1e17e45b14bbf3fa61cee3c2d1970')
+
+response:
+custom_interfaces.srv.ProofCheckerServiceMessage_Response(answer='The hash value is stored in the block number 3946 on the Blockchain network')
+```
+
