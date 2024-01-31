@@ -102,5 +102,5 @@ Ouput example
 1697364962 The trajectory has been replanned in order to achieve the goal pose.
 ...
 ```
-Service parameters are set [here](https://github.com/laurafbec/immutable_explainable_BBR/blob/main/bag_interpreter/config/params.yaml)
+Service parameters are set [here](https://github.com/laurafbec/immutable_explainable_BBR/blob/main/bag_interpreter/config/params.yaml).
 ## Explainability approach
