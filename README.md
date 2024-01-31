@@ -17,3 +17,15 @@ The following images show the floor plan of the scenario used in the development
 Nodejs, Ganache, etc.
 
 [LocalGPT](https://github.com/PromtEngineer/localGPT)
+
+# Software artifacts
+## Accountability approach
+After starting the simulation, immutable black-box recording information service can be started with the command
+```
+ros2 launch tamper_proof_bag_recorder tp_bag_recorder.launch.py
+```
+The previous recording service can be started and stopped by running
+```
+ros2 service call /tp_bag_recorder_srv std_srvs/srv/SetBool data:\ true
+ros2 service call /tp_bag_recorder_srv std_srvs/srv/SetBool data:\ false
+```
