@@ -20,6 +20,7 @@ Nodejs, Ganache, etc.
 
 # Software artifacts
 ## Accountability approach
+### Recording service
 After starting the simulation, immutable black-box recording information service can be started with the command
 ```
 ros2 launch tamper_proof_bag_recorder tp_bag_recorder.launch.py
@@ -28,4 +29,10 @@ The previous recording service can be started and stopped by running
 ```
 ros2 service call /tp_bag_recorder_srv std_srvs/srv/SetBool data:\ true
 ros2 service call /tp_bag_recorder_srv std_srvs/srv/SetBool data:\ false
+```
+Output example
+```
+[INFO] [tp_bag_recorder_srv-1]: process started with pid [15535]
+[tp_bag_recorder_srv-1] [INFO] [1700671326.257738212] [tp_bag_recorder_srv]: Initial nonce 92fcd02be0566fb23f8aff37ec7fd4900fcd96b7973623ab80cf2f23742e9e4e
+[tp_bag_recorder_srv-1] [INFO] [1700671365.555115050] [tp_bag_recorder_srv]: Sending transaction...
 ```
