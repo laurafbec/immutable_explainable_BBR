@@ -87,6 +87,7 @@ ros2 launch bag_interpreter bag_interpreter.launch.py
 ```
 Ouput example
 ```
+...
 1697364961 Reached the goal!
 1697364961 Goal succeeded
 1697364961 Navigation to the goal number 1 has succeeded. 
@@ -99,5 +100,6 @@ Ouput example
 1697364962 Position: -8.00169543883381, -5.4981517190531815. Orientation: -0.6180766464102208,0.7861178405063041
 1697364962 Position: -7.984887035142159, -5.636550782605349. Orientation: -0.6988069948819524,0.7153102710740669
 1697364962 The trajectory has been replanned in order to achieve the goal pose.
+...
 ```
 ## Explainability approach
