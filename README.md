@@ -14,7 +14,7 @@ The following images show the floor plan of the scenario used in the development
 
 ![imagen](https://user-images.githubusercontent.com/13176052/227868841-21b6f0e0-1017-4136-94aa-396ba1205a6b.png)
 
-Nodejs, Ganache, etc.
+Nodejs, Ganache, Solidity etc.
 
 [LocalGPT](https://github.com/PromtEngineer/localGPT)
 
@@ -36,3 +36,12 @@ Output example
 [tp_bag_recorder_srv-1] [INFO] [1700671326.257738212] [tp_bag_recorder_srv]: Initial nonce 92fcd02be0566fb23f8aff37ec7fd4900fcd96b7973623ab80cf2f23742e9e4e
 [tp_bag_recorder_srv-1] [INFO] [1700671365.555115050] [tp_bag_recorder_srv]: Sending transaction...
 ```
+### Solidity contract deployment
+The deployment of the Solidity contract containing the blockchain logic can be done through the command
+```
+ros2 run tamper_proof_bag_recorder contract_deployment
+```
+After every deployment, the contract address muy be updated [here](https://github.com/laurafbec/immutable_explainable_BBR/blob/main/tamper_proof_bag_recorder/config/blockchain_config.yaml).
+Output example
+Contract Address: 0x7223a08911947C7351B75EA41266Cb695c72124e
+
