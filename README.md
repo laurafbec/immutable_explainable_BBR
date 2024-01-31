@@ -13,3 +13,7 @@ The following images show the floor plan of the scenario used in the development
 ![imagen](https://user-images.githubusercontent.com/13176052/227868761-7df42f3d-9043-4b07-af27-2b843806be0e.png)
 
 ![imagen](https://user-images.githubusercontent.com/13176052/227868841-21b6f0e0-1017-4136-94aa-396ba1205a6b.png)
+
+Nodejs, Ganache, etc.
+
+[LocalGPT](https://github.com/PromtEngineer/localGPT)
