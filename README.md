@@ -47,4 +47,6 @@ Output example
 ```
 Contract Address: 0x7223a08911947C7351B75EA41266Cb695c72124e
 ```
+### Hash chain generation
+Hash chain
 
