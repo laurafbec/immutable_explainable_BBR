@@ -14,7 +14,10 @@ The following images show the floor plan of the scenario used in the development
 
 ![imagen](https://user-images.githubusercontent.com/13176052/227868841-21b6f0e0-1017-4136-94aa-396ba1205a6b.png)
 
-Nodejs, Ganache, Solidity etc.
+npm v9.6.7
+Node.js v18.17.0
+Ganache v2.7.1
+Solidity
 
 [LocalGPT](https://github.com/PromtEngineer/localGPT)
 
