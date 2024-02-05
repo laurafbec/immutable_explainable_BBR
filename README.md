@@ -17,7 +17,7 @@ The following images show the floor plan of the scenario used in the development
 npm v9.6.7
 Node.js v18.17.0
 Ganache v2.7.1
-Solidity
+Solidity v0.8
 
 [LocalGPT](https://github.com/PromtEngineer/localGPT)
 
