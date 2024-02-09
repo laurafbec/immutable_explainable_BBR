@@ -109,4 +109,23 @@ Ouput example
 ...
 ```
 Service parameters are set [here](https://github.com/laurafbec/immutable_explainable_BBR/blob/main/bag_interpreter/config/params.yaml).
-## Explainability approach
+## Explainability evaluation
+GPT-4 evaluation over LocalGPT can be executed by running
+```
+python assisted_evaluation.py
+```
+Ouput example
+```
+...
+2024-02-06 19:42:37,276 - INFO - assisted_evaluation.py:121 - Running on: cpu
+2024-02-06 19:42:37,276 - INFO - assisted_evaluation.py:122 - Display Source Documents set to: False
+2024-02-06 19:42:37,276 - INFO - assisted_evaluation.py:123 - Use history set to: False
+2024-02-06 19:42:39,696 - INFO - SentenceTransformer.py:66 - Load pretrained SentenceTransformer: hkunlp/instructor-xl
+load INSTRUCTOR_Transformer
+max_seq_length  512
+2024-02-06 19:42:51,418 - INFO - run_localGPT.py:63 - Loading Model: TheBloke/Llama-2-7b-Chat-GGUF, on: cpu
+2024-02-06 19:42:51,418 - INFO - run_localGPT.py:64 - This action can take a few minutes!
+2024-02-06 19:42:51,418 - INFO - load_models.py:38 - Using Llamacpp for GGUF/GGML quantized models
+ggml_init_cublas: found 1 CUDA devices:
+...
+```
