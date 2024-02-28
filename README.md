@@ -13,6 +13,7 @@ The following images show the floor plan of the scenario used in the development
 ![imagen](https://user-images.githubusercontent.com/13176052/227868761-7df42f3d-9043-4b07-af27-2b843806be0e.png)
 
 ![imagen](https://user-images.githubusercontent.com/13176052/227868841-21b6f0e0-1017-4136-94aa-396ba1205a6b.png)
+![Screenshot from 2024-02-19 17-45-53](https://github.com/laurafbec/immutable_explainable_BBR/assets/13176052/d2e9f52a-9366-4bf8-b0d1-4b439fc1947b)
 
 npm v9.6.7
 
