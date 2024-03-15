@@ -1,13 +1,12 @@
 cff-version: 1.2.0
-title: >-
-  Enhancing Trust in Autonomous Agents: An Architecture for Accountability and Explainability through Blockchain and Large Language Models
+title: Enhancing Trust in Autonomous Agents: An Architecture for Accountability and Explainability through Blockchain and Large Language Models
 message: >-
   If you use this repository, please cite it using the metadata
   from this file.
 type: dataset
 authors:
-  - family-names: Fernández-Becerra
-    given-names: Laura
+  - family-names: "Fernández-Becerra"
+    given-names: "Laura"
     email: inflfb00@estudiantes.unileon.es
     orcid: 'https://orcid.org/0009-0004-0819-7132'
   - family-names: "González-Santamarta"
