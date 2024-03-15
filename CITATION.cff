@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata from this file."
+authors:
+- family-names: "Fernández-Becerra"
+  given-names: "Laura"
+  orcid: "https://orcid.org/0009-0004-0819-7132"
+- family-names: "González-Santamarta"
+  given-names: "Miguel Ángel"
+  orcid: "https://orcid.org/0000-0002-7658-8600"
+- family-names: "Guerrero-Higueras"
+  given-names: "Ángel Manuel"
+  orcid: "https://orcid.org/0000-0001-8277-0700"
+- family-names: "Rodríguez-Lera"
+  given-names: "Francisco Javier"
+  orcid: "https://orcid.org/0000-0002-8400-7079"
+- family-names: "Matellán Olivera"
+  given-names: "Vicente"
+  orcid: "https://orcid.org/0000-0001-7844-9658"
+title: "Accountability as a Service for Robotics: Performance Assessment of Different Accountability Strategies for Autonomous Robots"
+version: 1.0
+preferred-citation:
+  identifiers:
+    - type: other
+      value: "arXiv:2403.09567"
+      description: The ArXiv preprint of the paper
+date-released: 2024-03-14
+url: "https://github.com/github-linguist/linguist"
+abstract: >-
+  The deployment of autonomous agents in environments involving human interaction has increasingly raised security concerns. Consequently, understanding the circumstances behind an event becomes critical, requiring the development of capabilities to justify their behaviors to non-expert users. Such explanations are essential in enhancing trustworthiness and safety, acting as a preventive measure against failures, errors, and misunderstandings. Additionally, they contribute to improving communication, bridging the gap between the agent and the user, thereby improving the effectiveness of their interactions. This work presents an accountability and explainability architecture implemented for ROS-based mobile robots. The proposed solution consists of two main components. Firstly, a black box-like element to provide accountability, featuring anti-tampering properties achieved through blockchain technology. Secondly, a component in charge of generating natural language explanations by harnessing the capabilities of Large Language Models (LLMs) over the data contained within the previously mentioned black box. The study evaluates the performance of our solution in three different scenarios, each involving autonomous agent navigation functionalities. This evaluation includes a thorough examination of accountability and explainability metrics, demonstrating the effectiveness of our approach in using accountable data from robot actions to obtain coherent, accurate and understandable explanations, even when facing challenges inherent in the use of autonomous agents in real-world scenarios.
+keywords:
+  - Robotics
+  - Accountability
+  - Explainability
+  - Blockchain
+  - Large Language Models
+  - Forensics
