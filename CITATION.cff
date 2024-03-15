@@ -1,8 +1,7 @@
 cff-version: 1.2.0
-title: Enhancing Trust in Autonomous Agents: An Architecture for Accountability and Explainability through Blockchain and Large Language Models
-message: >-
-  If you use this repository, please cite it using the metadata
-  from this file.
+title: "Enhancing Trust in Autonomous Agents: An Architecture for Accountability and Explainability through Blockchain and Large Language Models"
+message: "If you use this repository, please cite it using the metadata
+  from this file."
 type: dataset
 authors:
   - family-names: "Fernández-Becerra"
@@ -10,17 +9,17 @@ authors:
     email: inflfb00@estudiantes.unileon.es
     orcid: "https://orcid.org/0009-0004-0819-7132"
   - family-names: "González-Santamarta"
-	given-names: "Miguel Ángel"
-	orcid: "https://orcid.org/0000-0002-7658-8600"
+    given-names: "Miguel Ángel"
+    orcid: "https://orcid.org/0000-0002-7658-8600"
   - family-names: "Guerrero-Higueras"
-	given-names: "Ángel Manuel"
-	orcid: "https://orcid.org/0000-0001-8277-0700"
+    given-names: "Ángel Manuel"
+    orcid: "https://orcid.org/0000-0001-8277-0700"
   - family-names: "Rodríguez-Lera"
     given-names: "Francisco Javier"
-	orcid: "https://orcid.org/0000-0002-8400-7079"
+    orcid: "https://orcid.org/0000-0002-8400-7079"
   - family-names: "Matellán Olivera"
-	given-names: "Vicente"
-	orcid: "https://orcid.org/0000-0001-7844-9658"
+    given-names: "Vicente"
+    orcid: "https://orcid.org/0000-0001-7844-9658"
 identifiers:
   - type: doi
     value: arXiv.2403.09567
