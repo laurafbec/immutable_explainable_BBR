@@ -137,3 +137,14 @@ Predicted Grade: CORRECT
 ----------------------------------------
 {'reasoning': "The assistant's response is accurate and aligns perfectly with the question asked by the user. The assistant correctly identified and confirmed that the robot had re-planned an alternative trajectory during navigation. The response is concise with no superfluous information and is well-structured and coherent. The assistant's response is also very helpful as it confirms and explains the occurrence of the robot's navigation behavior.\n\nAccuracy: [[10]]\nConciseness: [[10]]\nCoherence: [[10]]\nHelpfulness: [[10]]", 'score': 1.0}
 ```
+
+## Acknowledgments
+
+<img src="https://user-images.githubusercontent.com/3810011/192087445-9aa45366-1fec-41f5-a7c9-fa612901ecd9.png" alt="DMARCE_logo drawio" width="200"/>
+
+DMARCE (EDMAR+CASCAR) Project: EDMAR PID2021-126592OB-C21 -- CASCAR PID2021-126592OB-C22 funded by MCIN/AEI/10.13039/501100011033 and by ERDF A way of making Europe
+
+<img src="https://raw.githubusercontent.com/DMARCE-PROJECT/DMARCE-PROJECT.github.io/main/logos/micin-uefeder-aei.png" alt="DMARCE_EU eu_logo" width="200"/>
+
+
+![TESCAC](https://github.com/Dsobh/explainable_ROS/blob/main/images/logos/BandaLogos_INCIBE_page-0001.jpg)
